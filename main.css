@@ -98,14 +98,18 @@ a:visited {
 }
 
 #text_ {
-    max-width: 50%;
-    max-height: 40px;
+    max-width: 300px;
+    /* max-height: 40px; */
     font-size: 13px;
-    padding: 13px;
-    margin-bottom: 20px;
+    padding: 10px;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    /* margin-bottom: 20px; */
     border-radius: 5px;
     border: rgb(175, 214, 83) solid;
-    margin-top: 30px;
+    margin-top: 20px;
+    color: gray;
+    background: white;
 }
 
 ._step {
@@ -114,10 +118,25 @@ a:visited {
     font-size: 10px;
 }
 
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    background: #fff;
+    /* border: 2px solid #666; */
+    color: #666;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+
 .dot {
     background-repeat: no-repeat;
     height: 2px;
-    width: 40px;
+    max-width: 35px;
+    width: auto;
     vertical-align: middle;
     margin-top: 18px;
     margin-left: 1px;
@@ -125,10 +144,10 @@ a:visited {
 }
 
 .i-step {
-    width: auto;
+    /* width: auto;
     height: auto;
     max-width: 45px;
-    max-width: 45px;
+    max-width: 45px; */
     border: 3px solid rgb(178, 213, 82);
     border-radius: 50px;
     padding: 3px;
@@ -330,6 +349,7 @@ a {
     font-size: 8px;
     width: 15px;
     height: 15px;
+    text-align: center;
 }
 
 #f-icon:hover {
@@ -338,8 +358,10 @@ a {
 
 .kkkk {
     position: absolute;
-    padding-left: 5px;
-    bottom: 58%;
+    /* padding-left: 5px; */
+    bottom: 50%;
+    font-size: 10px;
+    width: 52px;
 }
 
 img#imggg {
@@ -366,13 +388,12 @@ i#next{
 } */
 
 @media screen and ( max-width: 870px) {
-    #text_ {}
     .dot {
         background-repeat: no-repeat;
         max-height: 2px;
         max-width: 20px;
         vertical-align: middle;
-        margin-top: 18px;
+        margin-top: 10px;
         margin-left: 1px;
         margin-right: 1px;
     }
@@ -390,8 +411,22 @@ i#next{
     }
     .kkkk {
         position: absolute;
-        padding-left: 5px;
-        bottom: 55%;
+        /* padding-left: 5px; */
+        bottom: 40%;
+        width: 30px;
+    }
+    .numberCircle {
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        /* remove if you don't care about IE8 */
+        width: 20px;
+        height: 20px;
+        padding: 1px;
+        background: #fff;
+        /* border: 2px solid #666; */
+        color: #666;
+        text-align: center;
+        font: 18px Arial, sans-serif;
     }
 }
 
@@ -412,8 +447,8 @@ i#next{
         border: 1px solid rgb(178, 213, 82);
         border-radius: 50% 50%;
         padding: 1px;
-        max-height: 15px;
-        max-width: 15px;
+        max-height: 28px;
+        max-width: 28px;
         height: auto;
         width: auto;
     }
@@ -423,7 +458,7 @@ i#next{
     .dot {
         background-repeat: no-repeat;
         max-height: 2px;
-        max-width: 20px;
+        max-width: 15px;
         vertical-align: middle;
         margin-top: 6px;
         margin-left: 1px;
@@ -432,8 +467,22 @@ i#next{
     .kkkk {
         font-size: 8px;
         position: absolute;
-        padding-left: 1px;
-        bottom: 50%;
+        /* padding-left: 1px; */
+        bottom: 35%;
+        width: 15px;
         ;
+    }
+    .numberCircle {
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        /* remove if you don't care about IE8 */
+        width: 12px;
+        height: 12px;
+        padding: 1px;
+        background: #fff;
+        /* border: 2px solid #666; */
+        color: #666;
+        text-align: center;
+        font: 10px Arial, sans-serif;
     }
 }
