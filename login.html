@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Login Page">
+    <meta name="keywords" content="Login">
+    <meta name="author" content="Swapnil Suryajoshi">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body onload="load_from_storage()">
+    <header>
+        <div class="container">
+            <div class="col">
+                <div class="title">
+                    <h1 class="display-4">
+                        <p class="text-secondary">
+                            Login Form
+                        </p>
+                    </h1>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div class="row-input">
+                    <form method="POST" action="index.html" onsubmit="return do_validate();">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="user" required aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="exampleInputPassword1">Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="pass" required placeholder="Password">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" id="show_btn" onclick="_toggle()" type="button">Show</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rem">
+                            <label class="form-check-label" for="rem">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="margin-right: 10px;">Submit</button>
+                        <button type="reset" class="btn btn-warning btn-lg">Reset</button>
+                    </form>
+                    <!--   <form method="post" action="index.html" onsubmit="save_to_storage()">
+                        <label>Username:</label>
+                        <input type="text" name="user" id="user" placeholder="Username" required />
+                        <div class="alert alert-danger" role="alert" hidden>
+                            Please enter username!
+                        </div>
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Invalid Special character!</strong> You should have enter one of these(._-@).
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                </div>
+                <div class="row-input">
+                    <label>Password:</label>
+                    <input type="password" name="pass" id="pass" placeholder="Password" required />
+                    <a href="javascript:void(0)" onclick="show_pass();"><span class="pass-show" id="show-hide">show</span></a>
+                    <div class="alert alert-danger" role="alert" hidden>
+                        Please enter password!
+                    </div>
+                </div>
+                <div class="rem-row">
+                    <label><input type="checkbox" id="rem" name="check-box"/> <small>Remember Me</small> </label>
+                </div>
+                <div class="alert alert-success" role="alert" hidden>
+                    A simple success alert—check it out!
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Reset</button>
+                </div>
+                </form>
+            -->
+                </div>
+            </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+
+</html>
